@@ -1,0 +1,6 @@
+<button [ngClass]="[active ? 'button-active' : 'button-inactive', 'button']"
+        (click)="buttonHandler()">
+  <span class="material-symbols-outlined">
+    {{ active ? 'call_end' : 'call' }}
+  </span> {{ active ? time : 'Call'}}
+</button>
